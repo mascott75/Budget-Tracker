@@ -2,6 +2,8 @@ const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
 
+var MONGODB_URI = process.env.MONGODB_URL || "mongodb://localhost/dbName";
+
 const transactionSchema = new Schema(
   {
     name: {
